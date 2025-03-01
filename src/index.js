@@ -8,12 +8,11 @@ const PORT = process.env.PORT || 7000
 connectDb()
 .then(()=>{
     app.listen(PORT, () =>{
-            console.log(`Sever is running on port ${PORT}`);
-            
+            console.log(`Sever is running on port ${PORT}`);         
 })
 })
-.catch((err)=>{
-    console.log(`MongoDB connection error` ,err);   
+.catch((err)=>{ 
+    console.log(`MongoDB connection error` ,err);
     
 })
 
